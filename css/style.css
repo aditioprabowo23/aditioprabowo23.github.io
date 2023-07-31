@@ -44,6 +44,10 @@ body {
   padding: 8px 8px 0 8px
 }
 
+table {
+  width: 100%;
+}
+
 .d-flex {
   display: flex;
   justify-content: center;
@@ -59,6 +63,12 @@ body {
   width: 25%;
   height: 100%;
   text-align: right;
+  vertical-align: top;
+}
+
+ul.subject,
+ul.jobdesk {
+ margin-left: 20px;
 }
 
 ol.skills {
@@ -71,7 +81,8 @@ ol.skills {
 }
 
 .work-content,
-.work-year {
+.work-year,
+.project {
   margin-bottom: 10px;
 }
 
@@ -99,4 +110,25 @@ ol.skills {
   text-align: center;
   border-top: 2px solid #000000;
   padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+
+  .subject-left,
+  .subject-right {
+    width: 50%;
+    padding: 5px;
+  }
+   
+  .paper-wrap {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .name {
+    font-size: 20px;
+  }
 }
